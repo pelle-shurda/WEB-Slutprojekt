@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 13px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#headerNDlogo {
+    width: 80px;
+    height: auto;
+    margin: 0 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.left, .right {
+    flex: 0.3;
+    text-align: center;
+}
+#startVideo{
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    color: white;
+    font-family: "fontSedan";
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    font-size: large;
+    top: 51%;
+    transform: translate(-50%, -40%);
+
+}
+
+@font-face {
+    font-family: fontSedan;
+    src: url("fontSedan.otf");
+}
