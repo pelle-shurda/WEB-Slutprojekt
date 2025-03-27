@@ -1,33 +1,54 @@
 body{
     margin: 0;
+    background-color: white;
+    min-height: 250vh;
 }
+
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    position: relative;
     background-color: black;
     color: white;
-    padding: 13px;
-    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
+    height: 18vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 #headerNDlogo {
     width: 80px;
     height: auto;
-    margin: 0 20px;
+    position: relative;
+    left: 50%;
+    top: 3px;
+    transform: translateX(-50%);
 }
 
-h1 {
-    font-size: 20px;
+.left-links, .right-links {
+    display: flex;
+    align-items: center;
+    position: absolute;
 }
 
-.left, .right {
-    flex: 0.3;
-    text-align: center;
+.left-links {
+    left: 25%;
+    gap: 80px;
 }
+
+.right-links {
+    right: 23%;
+    gap: 80px;
+}
+
+.linkMeny, .linkOmoss, .linkHandla, .linkKontakt {
+    color: white;
+    text-decoration: none;
+    font-family: "fontSedan";
+    z-index: 10;
+}
+
 #startVideo{
     height: 100%;
     width: 100%;
@@ -48,4 +69,17 @@ p {
 @font-face {
     font-family: fontSedan;
     src: url("fontSedan.otf");
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 5px;
 }
