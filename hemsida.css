@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: white;
+    background-color: lightgray;
     min-height: 250vh;
 }
 
@@ -8,13 +8,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: sticky;
     background-color: black;
     color: white;
     top: 0;
     width: 100%;
     height: 18vh;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
 
 #headerNDlogo {
@@ -47,14 +48,21 @@ header {
     text-decoration: none;
     font-family: "fontSedan";
     z-index: 10;
+    transition: all 1s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.linkOmoss:hover, .linkHandla:hover, .linkKontakt:hover {
+    transform: scale(1.1);
 }
 
 #startVideo{
     height: 100%;
     width: 100%;
+    mask-image: linear-gradient(to bottom, lightgray 70%, transparent 100%);
 }
 
-p {
+#startText {
     color: white;
     font-family: "fontSedan";
     text-align: center;
@@ -63,7 +71,20 @@ p {
     font-size: large;
     top: 51%;
     transform: translate(-50%, -40%);
+}
 
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @font-face {
@@ -72,14 +93,54 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: black;
+    background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: darkgray;
+    background-color: rgb(169, 169, 169);
     border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    top: 130%;
+    left: 0;
+    border-radius: 7px;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;  
+    transition: max-height 1s ease-out, opacity 0.3s ease-out;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 9px 10px;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    font-family: "fontSedan";
+    transition: background-color 0.5s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(203,155,53,255);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

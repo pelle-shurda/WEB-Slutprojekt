@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nora Deli & Catering</title>
     <link rel="stylesheet" href="hemsida-Handla.css">
+    <script src="hemsida-Handla.js"></script>
+    <script src="https://kit.fontawesome.com/7240d51b4c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="favicon" href="nd-logo-favicon.png">
 </head>
 <body>
     <header>
         <div class="left-links">
             <a class="linkHandla" href="hemsida-Handla.html">Handla</a>
-            <a class="linkMeny" href="hemsida-meny.html">Meny</a>
+            <div class="dropdown">
+                <a class="linkMeny" href="hemsida-meny.html">Meny</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <a href="hemsida-Meny-dropdown-A.html">Lunchmeny</a>
+                    <a href="hemsida-Meny-dropdown-B.html">Middagsmeny</a>
+                </div>
+            </div>
         </div>
 
         <a href="hemsida.html"><img src="nd-logo.png" alt="" id="headerNDlogo"></a>
@@ -26,6 +35,6 @@
     <video loop autoplay muted id="handlaVideo">
         <source src="placeholder-handla-video.mp4">
     </video>
-    <p>HANDLA</p>
+    <p id="handlaText">HANDLA</p>
 </body>
 </html>

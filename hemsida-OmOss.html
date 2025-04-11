@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nora Deli & Catering</title>
+    <link rel="stylesheet" href="hemsida-OmOss.css">
+    <script src="hemsida-OmOss.js"></script>
+    <script src="https://kit.fontawesome.com/7240d51b4c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="favicon" href="nd-logo-favicon.png">
 </head>
 <body>
-    vi är shurda
+    <header>
+        <div class="left-links">
+            <a class="linkHandla" href="hemsida-Handla.html">Handla</a>
+            <div class="dropdown">
+                <a class="linkMeny" href="hemsida-meny.html">Meny</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <a href="hemsida-Meny-dropdown-A.html">Lunchmeny</a>
+                    <a href="hemsida-Meny-dropdown-B.html">Middagsmeny</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="hemsida.html"><img src="nd-logo.png" alt="" id="headerNDlogo"></a>
+        
+
+        <div class="right-links">
+            <a class="linkOmoss" href="hemsida-OmOss.html">Om Oss</a>
+            <a class="linkKontakt" href="hemsida-Kontakt.html">Kontakt</a>
+        </div>
+    </header>
+
+    <video loop autoplay muted id="omOssVideo">
+        <source src="placeholder-omoss-video.mp4">
+    </video>
+    <p id="omOssText">OM OSS</p>
 </body>
 </html>
