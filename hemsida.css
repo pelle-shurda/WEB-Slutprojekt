@@ -4,6 +4,12 @@ body{
     min-height: 250vh;
 }
 
+h1 {
+    font-family: "fontSedan";
+    font-size: 60px;
+    text-align: center;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -31,16 +37,15 @@ header {
     display: flex;
     align-items: center;
     position: absolute;
+    gap: 80px;
 }
 
 .left-links {
     left: 25%;
-    gap: 80px;
 }
 
 .right-links {
     right: 23%;
-    gap: 80px;
 }
 
 .linkMeny, .linkOmoss, .linkHandla, .linkKontakt {
@@ -48,18 +53,72 @@ header {
     text-decoration: none;
     font-family: "fontSedan";
     z-index: 10;
-    transition: all 1s ease;
     transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
 }
 
 .linkOmoss:hover, .linkHandla:hover, .linkKontakt:hover {
     transform: scale(1.1);
 }
 
+.meny-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: "fontSedan";
+    transition: transform 0.2s ease;
+}
+
+.meny-wrapper:hover span,
+.meny-wrapper:hover i {
+    transform: scale(1.1);
+}
+
+.meny-wrapper:hover i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .linkMeny {
+    transform: scale(1.1);
+}
+
+.dropdown i {
+    transition: transform 0.2s ease;
+}
+
+.dropdown:hover i {
+    transform: rotate(180deg) scale(1.1);
+}
+
 #startVideo{
     height: 100%;
     width: 100%;
     mask-image: linear-gradient(to bottom, lightgray 70%, transparent 100%);
+}
+
+#nyhetText {
+    color: rgb(41, 41, 41);
+    font-family: "fontSedan";
+    text-align: center;
+    margin-top: -30px;
+    font-size: 20px;
+}
+
+#nyhetBeskrivningRubrik {
+    color: rgb(41, 41, 41);
+    font-family: "fontSedan";
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: -10px;
+}
+
+#nyhetBeskrivning {
+    color: rgb(41, 41, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 #startText {
@@ -119,7 +178,6 @@ header {
     top: 130%;
     left: 0;
     border-radius: 7px;
-
     max-height: 0;
     overflow: hidden;
     opacity: 0;  
