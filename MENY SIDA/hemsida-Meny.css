@@ -81,7 +81,7 @@ header {
 
 @font-face {
     font-family: fontSedan;
-    src: url("fontSedan.otf");
+    src: url("/fonts/fontSedan.otf");
 }
 
 ::-webkit-scrollbar {

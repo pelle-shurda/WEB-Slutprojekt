@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: lightgray;
+    background-color: white;
     min-height: 250vh;
 }
 
@@ -20,7 +20,7 @@ header {
     top: 0;
     width: 100%;
     height: 18vh;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 15px black(0, 0, 0, 0.3);
     z-index: 10;
 }
 
@@ -32,6 +32,36 @@ header {
     top: 3px;
     transform: translateX(-50%);
 }
+
+/* 
+header {
+    transition: background-color 0.3s ease;
+    background-color: white;
+    color: black;
+}
+
+header .linkMeny,
+header .linkOmoss,
+header .linkHandla,
+header .linkKontakt,
+header .meny-wrapper {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+header.scrolled {
+    background-color: black;
+}
+
+header.scrolled .linkMeny,
+header.scrolled .linkOmoss,
+header.scrolled .linkHandla,
+header.scrolled .linkKontakt,
+header.scrolled .meny-wrapper {
+    color: white;
+}
+
+*/
 
 .left-links, .right-links {
     display: flex;
@@ -99,12 +129,65 @@ header {
     mask-image: linear-gradient(to bottom, lightgray 70%, transparent 100%);
 }
 
+#startOmOss {
+    font-family: "Regular";
+    margin-bottom: 100px;
+    transform: translateX(-2%);
+}
+
+#startOmOssBold {
+    font-family: "RegularBold";
+    margin-top: -80px;
+    margin-bottom: 100px;
+    transform: translateX(-2%);
+}
+
+
+.intro-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+
+    text-align: center;
+    font-size: larger;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-image {
+    flex-shrink: 0;
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
 #nyhetText {
     color: rgb(41, 41, 41);
     font-family: "fontSedan";
     text-align: center;
     margin-top: -30px;
     font-size: 20px;
+}
+
+.nyhetContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+    margin-top: 20px;
+}
+
+.nyhetVänster, .nyhetHöger {
+    width: 45%;
 }
 
 #nyhetBeskrivningRubrik {
@@ -115,10 +198,13 @@ header {
     margin-bottom: -10px;
 }
 
-#nyhetBeskrivning {
+.nyhetLista {
     color: rgb(41, 41, 41);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
 }
 
 #startText {
@@ -130,6 +216,17 @@ header {
     font-size: large;
     top: 51%;
     transform: translate(-50%, -40%);
+}
+
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-in {
@@ -148,7 +245,17 @@ header {
 
 @font-face {
     font-family: fontSedan;
-    src: url("fontSedan.otf");
+    src: url("/fonts/fontSedan.otf");
+}
+
+@font-face {
+    font-family: Regular;
+    src: url("/fonts/Regular.otf");
+}
+
+@font-face {
+    font-family: RegularBold;
+    src: url("/fonts/RegularBold.otf");
 }
 
 ::-webkit-scrollbar {
@@ -202,3 +309,55 @@ header {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.flowers-footer {
+    width: 100%;
+    height: 100px;
+    background-image: url("/images/flowers.png");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 100%;
+    z-index: 2;
+}
+
+.ms-stång {
+  position: absolute;
+  bottom: -60px;
+  right: 10px;
+  height: 300px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    top: 0;
+    width: 100%;
+    height: 18vh;
+    z-index: 10;
+}
+
+/*
+header.shrink {
+    height: 10vh;
+    transition: height 0.3s ease;
+}
+
+header.shrink #headerNDlogo {
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+header.shrink .linkMeny,
+header.shrink .linkOmoss,
+header.shrink .linkHandla,
+header.shrink .linkKontakt,
+header.shrink .meny-wrapper i {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+*/

@@ -49,12 +49,12 @@ header {
     z-index: 10;
 }
 
-#kontaktVideo{
+#handlaVideo{
     height: 100%;
     width: 100%;
 }
 
-#kontaktText {
+#handlaText {
     color: white;
     font-family: "fontSedan";
     text-align: center;
@@ -81,7 +81,7 @@ header {
 
 @font-face {
     font-family: fontSedan;
-    src: url("fontSedan.otf");
+    src: url("/fonts/fontSedan.otf");
 }
 
 ::-webkit-scrollbar {
