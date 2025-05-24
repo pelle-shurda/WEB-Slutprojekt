@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nora Deli & Catering</title>
+    <link rel="stylesheet" href="/full-hemsida.css">
+    <script src="hemsida-Meny.js"></script>
+    <script src="https://kit.fontawesome.com/7240d51b4c.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="favicon" href="/images/nd-logo-favicon.png">
 </head>
 <body>
-    <p>dropdown 1 sida</p>
+    <header>
+        <div class="left-links">
+            <a class="linkHandla" href="/HANDLA SIDA/hemsida-Handla.html">Handla</a>
+            <div class="dropdown">
+                <a class="linkMeny" href="/MENY SIDA/hemsida-Meny.html">Meny</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <a href="/MENY SIDA/hemsida-Meny-dropdown-A.html">Delimeny</a>
+                    <a href="/MENY SIDA/hemsida-Meny-dropdown-B.html">Cateringmeny</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="/STARTSIDA/hemsida.html"><img src="/images/nd-logo.png" alt="" id="headerNDlogo"></a>
+        
+
+        <div class="right-links">
+            <a class="linkOmoss" href="/OM OSS SIDA/hemsida-OmOss.html">Om Oss</a>
+            <a class="linkKontakt" href="/KONTAKT SIDA/hemsida-Kontakt.html">Kontakt</a>
+        </div>
+    </header>
+
+    <video loop autoplay muted id="menyVideo">
+        <source src="/videos/meny-video.mp4">
+    </video>
+    <p id="menyText">DELI MENY</p>
+    <h1 class="scroll-fade">Vår Lunchmeny</h1>
+    <p id="headerDesc" class="scroll-fade">Serveras mellan klockan 11:00 - 14:00!</p>
+    <h2 class="heading">VECKA 21</h2>
+    <div class="deliMeny-lunch">
+        <h3 class="subheadingSmall">MÅNDAG</h3>
+        <p class="regularText">Gravad Fjordlax,<br> med dillstuvad potatis, citron, fänkål & hovmästarsås.</p>
+        <h3 class="subheadingSmall">TISDAG</h3>
+        <p class="regularText">BBQ-kyckling,<br> med vattenmelon, fetaost, mynta, bulgursallad & harissadressing.</p>
+        <h3 class="subheadingSmall">ONSDAG</h3>
+        <p class="regularText">Kalvfärsbullar,<br> med kronärtskocka, pesto & sparrisrisotto.</p>
+        <h3 class="subheadingSmall">TORSDAG</h3>
+        <p class="regularText">Sydfransk fiskgryta,<br> med aioli & vitlöksbröd.</p>
+        <h3 class="subheadingSmall">FREDAG</h3>
+        <p class="regularText">Fläskschnitzel "Nduja",<br> med romansallad, ceasardressing, rökt sidfläsk, levainkrutonger & burkläsk.</p>
+    </div>
+    <h1 class="scroll-fade">Vår Heldagsmeny</h1>
+    <p id="headerDesc" class="scroll-fade">Serveras hela dagen!</p>
+    <div class="deliMeny-heldag">
+        <h3 class="subheadingSmall">Teryakilax</h3>
+        <p class="regularText">Teryakilax med risnudelsallad ”Nuoc cham”, gari, mango, puffat ris & limedressing.</p>
+        <img src="/images/Teryakilax.jpeg" alt="Teryakilax" class="Smaller-square-image">
+
+        <h3 class="subheadingSmall">Biff Tataki</h3>
+        <p class="regularText">Soyamarinerad flankstek, glasnudlar, kimchikål, böngroddar och Sean Connery-dressing.</p>
+        <img src="/images/Biff-Tataki.jpg" alt="Biff-Tataki" class="Smaller-square-image">
+
+        <h3 class="subheadingSmall">Asiatiska räkan</h3>
+        <p class="regularText">Glasnudelsallad, avocado, edame & Sean Connery dressing.</p>
+        <img src="/images/Asiatiska-räkan.jpg" alt="Asiatiska-räkan" class="Smaller-square-image">
+        
+        <h3 class="subheadingSmall">Falafel på svensk gulärta</h3>
+        <p class="regularText">Blomkålsquinoa, fetaost, rödbetshummus, kryddrostade solroskärnor.</p>
+        <img src="/images/Falafel-på-svensk-gulärta.jpg" alt="Falafel-på-svensk-gulärta" class="Smaller-square-image">
+        <h3 class="subheadingSmall">Koreansk kyckling</h3>
+        <p class="regularText">Mandumarinerad kyckling med ingefärsmorötter, chiligurka, koriander, sesamdressing.</p>
+        <img src="/images/Koreansk-kyckling.jpeg" alt="Koreansk-kyckling" class="Smaller-square-image">
+    </div>
 </body>
 </html>
