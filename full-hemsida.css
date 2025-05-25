@@ -1,13 +1,18 @@
-body{
+body {
     margin: 0;
     background-color: white;
-    min-height: 250vh;
 }
 
 h1 {
     font-family: "fontWide";
     font-size: 60px;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "regularBold";
 }
 
 header {
@@ -99,6 +104,11 @@ header {
     mask-image: linear-gradient(to bottom, lightgray 70%, transparent 100%);
 }
 
+#kontakt-successVideo {
+    width: 100%;
+    margin-bottom: -4px
+}
+
 #descriptionText {
     font-family: "Regular";
     margin-bottom: 100px;
@@ -153,6 +163,7 @@ header {
     text-align: center;
     margin-top: -30px;
     font-size: 20px;
+    font-weight: lighter;
 }
 
 .nyhetContainer {
@@ -215,6 +226,12 @@ header {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.regularTextBold {
+    font-family: "RegularBold";
+    text-align: center;
+    margin-top: -10px;
 }
 
 .scroll-fade {
@@ -283,7 +300,7 @@ header {
     z-index: 100;
     top: 130%;
     left: 0;
-    border-radius: 7px;
+    border-radius: 5px;
     max-height: 0;
     overflow: hidden;
     opacity: 0;  
@@ -292,12 +309,12 @@ header {
 
 .dropdown-content a {
     color: black;
-    padding: 9px 10px;
+    padding: 8px 10px;
     font-size: 13px;
     text-decoration: none;
     display: block;
     font-family: "fontWide";
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .dropdown-content a:hover {
@@ -312,8 +329,49 @@ header {
     margin-top: 40px;
 }
 
-.deliMeny-heldag {
+.deliMeny-container {
     margin-top: 20px;
+}
+
+.deliMeny-rad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.deliMeny-box {
+    flex: 1 1 400px;
+    max-width: 420px;
+    text-align: center;
+}
+
+.order-box {
+    text-align: center;
+}
+
+.order-box p {
+    margin-top: 25px;
+}
+
+.order-button {
+    background-color: black;
+    color: white;
+    font-family: "fontWide";
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.order-button:hover {
+    background-color: rgba(203,155,53,255);
+    transform: scale(1.05);
 }
 
 .flowers-footer {
@@ -352,6 +410,8 @@ header {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .karta-container iframe {
     width: 100%;
@@ -399,14 +459,58 @@ header {
     color: black;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer {
     background-color: black;
     color: white;
-    top: 0;
-    width: 100%;
-    height: 18vh;
-    z-index: 10;
+    padding: 20px 5% 20px;
+    font-family: "Regular";
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-header {
+    font-family: "fontWide";
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.socials-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.socials-icons a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socials-icons a:hover {
+    color: rgba(203, 155, 53, 255);
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    border-top: 1px solid rgba(126, 126, 126, 0.3);
+    padding-top: 10px;
 }
