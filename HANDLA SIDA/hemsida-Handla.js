@@ -34,3 +34,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     elements.forEach(el => observer.observe(el));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const arrow = document.querySelector(".header-arrow");
+    const termsContainer = document.querySelector(".terms-container");
+    const caretIcon = arrow.querySelector("i");
+
+    arrow.addEventListener("click", function () {
+        termsContainer.classList.toggle("visible");
+        caretIcon.classList.toggle("rotated");
+    });
+});
