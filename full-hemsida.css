@@ -5,7 +5,7 @@ body {
 
 h1 {
     font-family: "fontWide";
-    font-size: 60px;
+    font-size: 3.75rem;
     text-align: center;
 }
 
@@ -48,11 +48,11 @@ header {
 }
 
 #headerNDlogo {
-    width: 80px;
+    width: 5rem;
     height: auto;
     position: relative;
     left: 50%;
-    top: 3px;
+    top: 0.1875rem;
     transform: translateX(-50%);
 }
 
@@ -60,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     position: absolute;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .left-links { 
@@ -74,7 +74,7 @@ header {
 .meny-box {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.3125rem;
     color: white;
     font-family: "fontWide";
     transition: transform 0.2s ease;
@@ -107,12 +107,11 @@ header {
 .dropdown-content {
     position: absolute;
     background-color: whitesmoke;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 6.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     z-index: 100;
     top: 130%;
-    left: 0;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     max-height: 0;
     overflow: hidden;
     opacity: 0;  
@@ -125,8 +124,8 @@ header {
 
 .dropdown-content a {
     color: black;
-    padding: 8px 10px;
-    font-size: 13px;
+    padding: 0.5rem 0.625rem;
+    font-size: 0.8125rem;
     text-decoration: none;
     display: block;
     font-family: "fontWide";
@@ -155,19 +154,19 @@ header {
 
 #kontakt-successVideo {
     width: 100%;
-    margin-bottom: -4px;
+    margin-bottom: -0.25rem;
 }
 
 #descriptionText {
     font-family: "Regular";
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
     transform: translateX(-2%);
 }
 
 #descriptionTextBold {
     font-family: "RegularBold";
-    margin-top: -80px;
-    margin-bottom: 100px;
+    margin-top: -5rem;
+    margin-bottom: 6.25rem;
     transform: translateX(-2%);
 }
 
@@ -175,34 +174,34 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 40px;
-    padding: 40px 5%;
+    gap: 2.5rem;
+    padding: 2.5rem 5%;
     flex-wrap: wrap;
-    margin-top: -10px;
-    margin-bottom: -60px;
+    margin-top: -0.625rem;
+    margin-bottom: -3.75rem;
     text-align: center;
     font-size: larger;
 }
 
 .container-position {
     flex: 1;
-    min-width: 300px;
+    min-width: 18.75rem;
 }
 
 .square-image, .Smaller-square-image {
     flex-shrink: 0;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 0.3125;
 }
 
 .square-image {
-    height: 400px;
-    width: 500px;
+    height: 25rem;
+    width: 31.25rem;
 }
 
 .Smaller-square-image {
-    height: 350px;
-    width: 400px;
+    height: 21.875rem;
+    width: 25rem;
 }
 
 /* underrubrik, mindre underrubrik och rubrik */
@@ -213,18 +212,18 @@ header {
 }
 
 .subheading {
-    font-size: 20px; 
-    margin-bottom: -10px;
+    font-size: 1.25rem; 
+    margin-bottom: -0.625rem;
 }
 
 .subheadingSmall {
-    font-size: 17px; 
-    margin-bottom: -10px;
+    font-size: 1.0625rem; 
+    margin-bottom: -0.625rem;
 }
 
 .heading {
-    font-size: 30px; 
-    margin-bottom: -20px;
+    font-size: 1.875rem; 
+    margin-bottom: -1.25rem;
 }
 
 #startText, #omOssText, #menyText, #kontaktText, #handlaText {
@@ -244,17 +243,17 @@ header {
 }
 
 #headerDesc {
-    margin-top: -40px;
+    margin-top: -2rem;
 }
 
 .regularText {
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .regularTextBold {
     font-family: "RegularBold";
     text-align: center;
-    margin-top: -10px;
+    margin-top: -0.625rem;
 }
 
 /* "nyhet sidan" på front page */
@@ -264,7 +263,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 10%;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .nyhetVänster, .nyhetHöger {
@@ -283,7 +282,7 @@ header {
 /* scroll animationer */
 .scroll-fade {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -320,7 +319,7 @@ header {
 
 /* scrollbar åt höger på sidan */
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 0.4375rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -329,30 +328,30 @@ header {
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(169, 169, 169);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 /* Deli menyn */
 .menyFormat {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .deliMeny-container {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .deliMeny-rad {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    margin: 40px auto;
-    max-width: 900px;
+    gap: 2.5rem;
+    margin: 2.5rem auto;
+    max-width: 56.25rem;
 }
 
 .deliMeny-box {
-    flex: 1 1 400px;
-    max-width: 420px;
+    flex: 1 1 25rem;
+    max-width: 26.25rem;
     text-align: center;
 }
 
@@ -361,9 +360,9 @@ header {
 .cateringTabell {
     text-align: left;
     line-height: 5vh;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    margin-left: 15vh;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 6rem;
 }
 
 .cateringTabell td {
@@ -372,7 +371,7 @@ header {
 
 .cateringTabell th {
     font-family: "FontWide";
-    font-size: 120%;
+    font-size: 1.2rem;
 }
 
 /* order sidan på 'handla' */
@@ -381,18 +380,18 @@ header {
 }
 
 .order-box p {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 }
 
 .order-button {
     background-color: black;
     color: white;
     font-family: "fontWide";
-    padding: 14px 28px;
-    margin-bottom: 5vh;
-    font-size: 16px;
+    padding: 0.875rem 1.75rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -406,24 +405,24 @@ header {
 /* Villkor box */
 .terms-container {
     max-height: 5vh;
-    margin-top: -6vh;
+    margin-top: -1rem;
     overflow: hidden;
     transition: max-height 0.7s ease, opacity 0.5s ease;
     opacity: 0;
 }
 
 .terms-container.visible {
-    max-height: 900px;
+    max-height: 56.25rem;
     opacity: 1;
 }
 
 .terms-container h3, .terms-container h4 {
-    margin-bottom: -3vh;
+    margin-bottom: -1rem;
 }
 
 /* Pil-ikon och boxen */
 .fa-caret-down {
-    font-size: 5vh;
+    font-size: 1.5rem;
     position: relative;
     cursor: pointer;
     top: -3vh;
@@ -433,11 +432,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 0.375rem;
 }
 
 .header-arrow h2 {
-    margin-top: -2vh;
+    margin-top: -0.8rem;
 }
 
 .header-arrow i {
@@ -451,7 +450,7 @@ header {
 /* Footer */
 .flowers-footer {
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     background-image: url("/images/flowers.png");
     background-repeat: repeat-x;
     background-position: bottom center;
@@ -461,9 +460,9 @@ header {
 
 .ms-stång {
     position: absolute;
-    bottom: -60px;
-    right: 10px;
-    height: 300px;
+    bottom: -3.75rem;
+    right: 0.625rem;
+    height: 18.75rem;
     z-index: -1;
     pointer-events: none;
 }
@@ -471,7 +470,7 @@ header {
 .footer {
     background-color: black;
     color: white;
-    padding: 20px 5% 20px;
+    padding: 1.25rem 5%;
     font-family: "Regular";
 }
 
@@ -490,24 +489,24 @@ header {
 .footer-header {
     font-family: "fontWide";
     font-weight: lighter;
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.125rem;
+    margin-bottom: 0.9375rem;
     color: white;
 }
 
 .footer-section p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 0.3125rem 0;
+    font-size: 0.875rem;
 }
 
 .socials-icons {
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .socials-icons a {
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
@@ -518,44 +517,43 @@ header {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
-    font-size: 13px;
-    border-top: 1px solid rgba(126, 126, 126, 0.3);
-    padding-top: 10px;
+    margin-top: 1.875rem;
+    font-size: 0.8125rem;
+    border-top: 0.0625rem solid rgba(126, 126, 126, 0.3);
+    padding-top: 0.625rem;
 }
 
 /* Karta för nora deli */
 .karta-section {
-    padding: 60px 5%;
+    padding: 3.75rem 5%;
     text-align: center;
     font-family: "fontWide";
-    margin-top: -50px;
+    margin-top: -3.125rem;
 }
 
 .karta-container {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 30px;
-    border: 4px solid rgba(37,70,89,255);
-    border-radius: 10px;
+    max-width: 50rem;
+    margin: 1.875rem auto 0 auto;
+    border: 0.25rem solid rgba(37,70,89,255);
+    border-radius: 0.625rem;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 .karta-container iframe {
     width: 100%;
-    height: 450px;
+    height: 28.125rem;
     border: 0;
 }
 
 /* Kontaktformulär */
 #kontaktFormulär {
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 40px;
+    max-width: 37.5rem;
+    margin: 2.75rem auto;
+    padding: 2.5rem;
     background-color: #f7f7f7;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: "fontWide";
     text-align: left;
@@ -564,22 +562,22 @@ header {
 #kontaktFormulär input,
 #kontaktFormulär textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-family: "Regular";
-    font-size: 14px;
+    font-size: 0.875rem;
     resize: none;
 }
 
 #kontaktFormulär button {
     background-color: black;
     color: white;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "fontWide";
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -589,3 +587,6 @@ header {
     background-color: rgba(203, 155, 53, 255);
     color: black;
 }
+
+/*
+@media
