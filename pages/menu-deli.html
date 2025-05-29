@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nora Deli & Catering</title>
-    <link rel="stylesheet" href="/full-hemsida.css">
-    <script src="hemsida-Meny.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
     <script src="https://kit.fontawesome.com/7240d51b4c.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="favicon" href="/images/nd-logo-favicon.png">
+    <link rel="icon" href="/images/nd-logo-favicon.png">
 </head>
 <body>
     <header>
         <div class="left-links">
-            <a class="linkHandla" href="/HANDLA SIDA/hemsida-Handla.html">Handla</a>
+            <a class="linkHandla" href="/pages/shop.html">Handla</a>
             <div class="dropdown">
-                <a href="/MENY SIDA/hemsida-Meny.html" class="meny-box">
+                <a href="/pages/menu.html" class="meny-box">
                     <span class="linkMeny">Meny</span>
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <div class="dropdown-content">
-                    <a href="/MENY SIDA/hemsida-Meny-dropdown-A.html">Delimeny</a>
-                    <a href="/MENY SIDA/hemsida-Meny-dropdown-B.html">Cateringmeny</a>
-                    <a href="/MENY SIDA/hemsida-Meny-dropdown-C.html">Helgkasse</a>
+                    <a href="/pages/menu-deli.html">Delimeny</a>
+                    <a href="/pages/menu-catering.html">Cateringmeny</a>
+                    <a href="/pages/menu-helgkasse.html">Helgkasse</a>
                 </div>
             </div>
         </div>
 
-        <a href="/STARTSIDA/hemsida.html"><img src="/images/nd-logo.png" alt="" id="headerNDlogo"></a>
-        
+        <a href="/index.html"><img src="/images/nd-logo.png" alt="Nora Deli Logo" id="headerNDlogo"></a>
 
         <div class="right-links">
-            <a class="linkOmoss" href="/OM OSS SIDA/hemsida-OmOss.html">Om Oss</a>
-            <a class="linkKontakt" href="/KONTAKT SIDA/hemsida-Kontakt.html">Kontakt</a>
+            <a class="linkOmoss" href="/pages/about.html">Om Oss</a>
+            <a class="linkKontakt" href="/pages/contact.html">Kontakt</a>
         </div>
     </header>
 
@@ -40,7 +39,7 @@
     </video>
     <p id="menyText">DELI MENY</p>
     <h1 class="scroll-fade">Vår Lunchmeny</h1>
-    <p id="headerDesc" class="scroll-fade">Serveras mellan klockan 11:00 - 14:00!</p>
+    <p class="header-desc scroll-fade">Serveras mellan klockan 11:00 - 14:00!</p>
     <h2 class="heading">VECKA 22</h2>
     <div class="menyFormat">
         <h3 class="subheadingSmall">MÅNDAG</h3>
@@ -55,7 +54,7 @@
         <p class="regularText">Räksmörgås,<br> med kokt Tarbyägg, majonnäs, citron,<br> rädisa & ärtskott på rågbröd.</p>
     </div>
     <h1 class="scroll-fade">Vår Heldagsmeny</h1>
-    <p id="headerDesc" class="scroll-fade">Serveras hela dagen!</p>
+    <p class="header-desc scroll-fade">Serveras hela dagen!</p>
     <h2 class="heading">SIGNATURE BOWLS</h2>
     <div class="deliMeny-container">
         <div class="deliMeny-rad">
@@ -63,14 +62,14 @@
                 <h3 class="subheadingSmall">Teryakilax</h3>
                 <p class="regularText">Teryakilax med risnudelsallad ”Nuoc cham”, gari, mango, puffat ris & limedressing.</p>
                 <p class="regularTextBold">170kr</p>
-                <img src="/images/Teryakilax.jpeg" alt="Teryakilax" class="Smaller-square-image">
+                <img src="/images/Teryakilax.jpeg" alt="Teryakilax" loading="lazy" class="Smaller-square-image">
             </div>
 
             <div class="deliMeny-box">
                 <h3 class="subheadingSmall">Biff Tataki</h3>
                 <p class="regularText">Soyamarinerad flankstek, glasnudlar, kimchikål, böngroddar och Sean Connery-dressing.</p>
                 <p class="regularTextBold">165kr</p>
-                <img src="/images/Biff-Tataki.jpg" alt="Biff-Tataki" class="Smaller-square-image">
+                <img src="/images/Biff-Tataki.jpg" alt="Biff Tataki" loading="lazy" class="Smaller-square-image">
             </div>
         </div>
 
@@ -79,14 +78,14 @@
                 <h3 class="subheadingSmall">Asiatiska räkan</h3>
                 <p class="regularText">Glasnudelsallad, avocado, edame och Sean Connery dressing.</p>
                 <p class="regularTextBold">170kr</p>
-                <img src="/images/Asiatiska-räkan.jpg" alt="Asiatiska-räkan" class="Smaller-square-image">
+                <img src="/images/Asiatiska-räkan.jpg" alt="Asiatiska räkan" loading="lazy" class="Smaller-square-image">
             </div>
 
             <div class="deliMeny-box">
                 <h3 class="subheadingSmall">Falafel på svensk gulärta</h3>
                 <p class="regularText">Blomkålsquinoa, fetaost, rödbetshummus, kryddrostade solroskärnor.</p>
                 <p class="regularTextBold">155kr</p>
-                <img src="/images/Falafel-på-svensk-gulärta.jpg" alt="Falafel-på-svensk-gulärta" class="Smaller-square-image">
+                <img src="/images/Falafel-på-svensk-gulärta.jpg" alt="Falafel på svensk gulärta" loading="lazy" class="Smaller-square-image">
             </div>
         </div>
 
@@ -94,7 +93,7 @@
             <h3 class="subheadingSmall">Koreansk kyckling</h3>
             <p class="regularText">Mandumarinerad kyckling med ingefärsmorötter, chiligurka, koriander, sesamdressing.</p>
             <p class="regularTextBold">160kr</p>
-            <img src="/images/Koreansk-kyckling.jpeg" alt="Koreansk-kyckling" class="Smaller-square-image">
+            <img src="/images/Koreansk-kyckling.jpeg" alt="Koreansk-kyckling" loading="lazy" class="Smaller-square-image">
         </div>
 
     </div>
@@ -105,14 +104,14 @@
                 <h3 class="subheadingSmall">Hot Tuna</h3>
                 <p class="regularText">Levain, tonfiskröra, avocado, rödlök, jalapeno, tomat, tabasco.</p>
                 <p class="regularTextBold">139kr</p>
-                <img src="/images/hot-tuna_biff-bea_bbq-kyckling.jpg" alt="Hot-Tuna" class="Smaller-square-image">
+                <img src="/images/hot-tuna_biff-bea_bbq-kyckling.jpg" alt="Hot Tuna" loading="lazy" class="Smaller-square-image">
             </div>
 
             <div class="deliMeny-box">
                 <h3 class="subheadingSmall">Biff & Bea</h3>
                 <p class="regularText">Levain, rödlök, lagrad ost, sotad flankstek, torkad tomat och dragonmajonnäs.</p>
                 <p class="regularTextBold">139kr</p>
-                <img src="/images/hot-tuna_biff-bea_bbq-kyckling.jpg" alt="Biff-och-Bea" class="Smaller-square-image">
+                <img src="/images/hot-tuna_biff-bea_bbq-kyckling.jpg" alt="Biff och Bea" loading="lazy" class="Smaller-square-image">
             </div>
         </div>
 
@@ -120,7 +119,7 @@
             <h3 class="subheadingSmall">BBQ Kyckling</h3>
             <p class="regularText">Levain, kycklinglårfilé, bbqsås, coleslaw, pickled chili, tomat, rödlök & cheddar.</p>
             <p class="regularTextBold">135kr</p>
-            <img src="/images/hot-tuna_biff-bea_bbq-kyckling.jpg" alt="BBQ-kyckling" class="Smaller-square-image">
+            <img src="/images/hot-tuna_biff-bea_bbq-kyckling.jpg" alt="BBQ kyckling" loading="lazy" class="Smaller-square-image">
         </div>
     </div>
     <h2 class="heading">WRAPS</h2>
@@ -129,10 +128,10 @@
             <h3 class="subheadingSmall">Kycklingkebab</h3>
             <p class="regularText">Isbergssallad, picklad rödkål, harissa, tomat, rödlök & vår egen kebabsås.</p>
             <p class="regularTextBold">135kr</p>
-            <img src="/images/kycklingkebab-wrap.jpg" alt="kycklingkebab-wrap" class="Smaller-square-image">
+            <img src="/images/kycklingkebab-wrap.jpg" alt="kycklingkebab wrap" loading="lazy" class="Smaller-square-image">
         </div>
     </div>
-    <p class="regularText">Detta går att beställa <a href="/HANDLA SIDA/hemsida-Handla.html#länkDestination">här!</a></p>
+    <p class="regularText">Detta går att beställa <a href="/pages/shop.html#länkDestination">här!</a></p>
 
     <footer class="footer">
         <div class="footer-container">
